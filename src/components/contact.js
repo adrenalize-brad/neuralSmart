@@ -62,13 +62,7 @@ const Contact = () => {
     return(
         <div className="page-wrapper flex flex-col">
             <div className="page-header">
-                <Typewriter 
-                    options={{ delay: 50, }}
-                    onInit={(typewriter) => {
-                        typewriter.typeString('Contact Us ')
-                        .start();
-                    }}
-                />
+                
             </div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2/3 flex flex-col items-center">
                 <div className="flex flex-col w-full mt-2 mb-1">
