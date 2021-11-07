@@ -33,8 +33,8 @@ module.exports = {
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
+    `gatsby-plugin-preact`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
