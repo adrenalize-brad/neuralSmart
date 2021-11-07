@@ -1,4 +1,8 @@
 import styled from 'styled-components'
+import { window } from 'browser-monads'
+
+let windowHeight = window.innerHeight;
+console.log(windowHeight)
 
 const MainDisplay = styled.div`
     position:absolute;
@@ -6,7 +10,7 @@ const MainDisplay = styled.div`
     left: ${props => props.display === 'open' ? props.browserType === 'mobile' ? '0' : `0` : `50%` };
     transform: ${props => props.display === 'open' ? props.browserType === 'mobile' ? 'translateX(0)' : `translate(175px, -50%)` : `translate(-50%, -50%) rotateX(180deg)` };
     transition:0.3s;
-    height: ${props => props.display === 'open' ? props.browserType === 'mobile' ? `calc(100vh - 90px)` : `calc(100% - 30px)` :  props.browserType === 'mobile' ? 'calc(100% - 20px)' : '50%' };
+    height: ${props => props.display === 'open' ? props.browserType === 'mobile' ? `calc(${windowHeight}px - 90px)` : `calc(100% - 30px)` :  props.browserType === 'mobile' ? 'calc(100% - 20px)' : '50%' };
     width: ${props => props.display === 'open' ? props.browserType === 'mobile' ? 'calc(100% - 10px)' : `calc(100% - 190px)` : props.browserType === 'mobile' ? 'calc(100% - 20px)' : `50%` };
     border-radius: ${props => props.display === 'open' ? props.browserType === 'mobile' ? '0 15px 15px 0' : '15px 15px 15px 15px' : '15px 15px 15px 15px'};
 `
@@ -33,7 +37,7 @@ const MenuItemWrapper = styled.div`
     transition:0.3s;
     transition-delay: 0.125s;
     width: 170px;
-    height: ${props => props.browserType === 'mobile' ? 'calc(100vh - 90px)' : `100%` };
+    height: ${props => props.browserType === 'mobile' ? `calc(${windowHeight}px - 90px)` : `100%` };
 `
 
 export { MainDisplay, MenuDisplay, MenuItemWrapper }
