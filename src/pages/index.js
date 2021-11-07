@@ -42,7 +42,10 @@ const Index = () => {
       }
   `);
 
-  let browserType = context.display;
+  let browserType;
+  if(context !== undefined){
+    browserType = context.display
+  };
 
   const bgImage = getImage(imageData.backgroundImage)
   const avImage = getImage(imageData.avatarImage)
