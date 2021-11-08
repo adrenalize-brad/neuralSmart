@@ -16,7 +16,7 @@ const Nav = ({ context, open, navLogo }) => {
         else{
             setDisplay('desktop')
         }
-    })
+    }, [ context ])
 
     const [ navbarHeight, setNavbarHeight ] = useState(80)
     const [ navbarTop, setNavbarTop ] = useState(0)
@@ -30,7 +30,7 @@ const Nav = ({ context, open, navLogo }) => {
             setNavbarHeight(context.display.height - 30);
             setNavbarTop(15);
         }
-    })
+    }, [ context, display ])
 
     const [ menuStyle, setMenuStyle ] = useState({})
 
@@ -48,8 +48,7 @@ const Nav = ({ context, open, navLogo }) => {
                 top: (context.display.height / 2) + document.getElementById('avatar').offsetHeight - 30
             })
         }
-    })
-
+    },[ context, display ])
 
     let navClass;
     let navTransition;
