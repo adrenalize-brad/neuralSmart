@@ -67,12 +67,12 @@ h1,h2,h3,h4,h5,.font-headers {
 
 .mobileLinksClosed{
     left:-175px;
-    transition: ease-out 0.3s;
+    transition: ease-out 0.15s;
 }
 
 .mobileLinksOpen{
     left: 0;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.15s;
 }
 
 .desktopNav{
