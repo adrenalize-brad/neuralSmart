@@ -6,16 +6,7 @@ import { MdAccountCircle, MdOutlinePhoneAndroid } from 'react-icons/md'
 import { FaLaptopCode, FaBook, FaHome, FaBriefcase, FaShoppingCart, FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { IoMdRocket } from 'react-icons/io'
 import { IoBuild } from 'react-icons/io5'
-import { MainDisplay, MenuDisplay, MenuItemWrapper } from '../styles/components'
 import { Context } from '../context'
-import Home from '../components/home'
-import Contact from '../components/contact'
-import About from '../components/about'
-import Services from '../components/services'
-import Resources from '../components/resources'
-import Products from '../components/products'
-import Portfolio from '../components/portfolio'
-
 
 const Index = () => {
 
@@ -102,11 +93,14 @@ const Index = () => {
   }
   
   return (
+    <div>
+    {/*
     <div className="fixed w-full h-full">
 
       <BgImage image={bgImage} className="fixed w-full h-full"/>
-
-      <MenuDisplay menuToggle={menuToggle} browserType={browserType} display={mainDisplay} className="glass flex flex-col">
+    
+    //NAV
+      <div menuToggle={menuToggle} browserType={browserType} display={mainDisplay} className="glass flex flex-col">
 
         <div id="avatar" onClick={() => toggleMain(null,'home','closed', false)} className={`z-30 relative flex flex-row items-center justify-center p-1 cursor-pointer ${browserType === 'mobile' ? '': null}`}>
           { browserType === 'mobile' ?
@@ -120,7 +114,7 @@ const Index = () => {
           }
         </div>
         
-        <MenuItemWrapper menuToggle={menuItemToggle} browserType={browserType} id="menu" className={`${browserType === 'mobile' ? 'rounded-r-lg pl-2 bg-black bg-opacity-90' : 'pl-1'} flex flex-col mx-auto`}>
+        <div menuToggle={menuItemToggle} browserType={browserType} id="menu" className={`${browserType === 'mobile' ? 'rounded-r-lg pl-2 bg-black bg-opacity-90' : 'pl-1'} flex flex-col mx-auto`}>
           <div className={`${browserType === 'mobile' ? '' : 'relative mt-auto'}`}>
           <button className="nav-link" onClick={() => (setDisplay('home'))}>
             <FaHome className={`${display === 'home' ? `nav-icon-selected` : `text-white`} nav-icon text-4xl`} />
@@ -160,7 +154,7 @@ const Index = () => {
             <FaTwitter className="sharing-icon hover:text-blue-300" />
           </div>
         </div>
-        </MenuItemWrapper>
+        </div>
 
 
           { browserType === 'mobile' ?
@@ -174,9 +168,9 @@ const Index = () => {
             </div>
           : null }
 
-      </MenuDisplay>
+      </div>
 
-      <MainDisplay browserType={browserType} display={mainDisplay} className="glass">
+      <div browserType={browserType} display={mainDisplay} className="glass">
 
           { mainDisplay === 'open' ?
 
@@ -233,9 +227,10 @@ const Index = () => {
 
           }
 
-        </MainDisplay>
+        </div>
 
-    </div>
+        </div>*/}
+        </div>
   ) 
 };
 

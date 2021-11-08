@@ -47,11 +47,51 @@ h1,h2,h3,h4,h5,.font-headers {
     background-color: rgb(228 228 228 / 15%); 
 }
 
-#avatar{
-    margin-top:10px;
-    margin-right:10px;
-    width: 100%;
+.mobileNav{
+    @apply flex flex-row items-center rounded-br-lg;
+    width: calc(100% - 15px);
 }
+
+.mobileNavClosed{
+    top: -80px;
+}
+
+.mobileNavOpen{
+    @apply top-0 left-0;
+}
+
+.mobileLinks{
+    @apply absolute bg-black bg-opacity-70 p-3 rounded-r-lg;
+    width:175px;
+}
+
+.mobileLinksClosed{
+    left:-175px;
+    transition: ease-out 0.3s;
+}
+
+.mobileLinksOpen{
+    left: 0;
+    transition: ease-in 0.3s;
+}
+
+.desktopNav{
+    @apply flex flex-col items-center top-0 left-0 rounded-r-lg;
+    width: 180px;
+}
+
+.desktopNavClosed{
+
+}
+
+.desktopNavOpen{
+
+}
+
+.desktopLinks{
+    @apply absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2;
+}
+
 .avatartImg,.avatarImg::before,.avatarImg::after{
     @apply rounded-tr-lg;
 }

@@ -3,11 +3,14 @@ import './src/styles/global.css';
 import 'react-toastify/dist/ReactToastify.min.css';
 import { ToastContainer } from 'react-toastify';
 import { ContextProvider } from './src/context';
+import Layout from './src/components/layout'
 
   const wrapRootElement = ({ element }) => {
     return(
           <ContextProvider>
-            {element}
+            <Layout>
+              {element}
+            </Layout>
             <ToastContainer/>
           </ContextProvider>
       )

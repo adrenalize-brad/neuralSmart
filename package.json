@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "neuralsmart-gatsby-template",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Template for neural Smart Technologies Site",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -14,44 +14,19 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "algoliasearch": "^4.10.5",
-    "babel-plugin-styled-components": "^1.13.3",
-    "browser-monads": "^1.0.0",
-    "core-js": "^3.18.2",
-    "emailjs-com": "^3.2.0",
-    "gatsby": "^3.13.1",
+    "gatsby": "^4.1.1",
     "gatsby-background-image": "^1.5.3",
-    "gatsby-background-image-es5": "^1.5.3",
-    "gatsby-plugin-algolia": "^0.22.2",
-    "gatsby-plugin-image": "^1.14.1",
-    "gatsby-plugin-manifest": "^3.14.0",
-    "gatsby-plugin-netlify": "^3.14.0",
-    "gatsby-plugin-offline": "^4.14.0",
-    "gatsby-plugin-preact": "^6.1.0",
-    "gatsby-plugin-react-helmet": "^4.14.0",
-    "gatsby-plugin-sharp": "^3.14.1",
-    "gatsby-plugin-styled-components": "^4.14.0",
-    "gatsby-source-filesystem": "^3.14.0",
-    "gatsby-transformer-sharp": "^3.14.0",
+    "gatsby-plugin-image": "^2.1.0",
+    "gatsby-plugin-manifest": "^4.1.0",
+    "gatsby-plugin-sharp": "^4.1.0",
+    "gatsby-transformer-sharp": "^4.1.0",
     "gbimage-bridge": "^0.1.4",
-    "nodemailer": "^5.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
-    "react-router-dom": "^5.3.0",
-    "react-scroll": "^1.8.4",
-    "react-share": "^4.4.0",
     "react-toastify": "^8.0.3",
-    "styled-components": "^5.3.3",
     "typewriter-effect": "^2.18.2"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.3.7",
-    "gatsby-plugin-postcss": "^4.14.0",
-    "postcss": "^8.3.9",
-    "prettier": "2.4.1",
-    "tailwindcss": "^2.2.16"
   },
   "repository": {
     "type": "git",
@@ -59,5 +34,12 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "gatsby-plugin-postcss": "^5.1.0",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19"
   }
 }

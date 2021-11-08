@@ -1,9 +1,3 @@
-import styled from 'styled-components'
-import { window } from 'browser-monads'
-
-let windowHeight = window.innerHeight;
-console.log(windowHeight)
-
 const MainDisplay = styled.div`
     position:absolute;
     top: ${props => props.display === 'open' ? props.browserType === 'mobile' ? '80px' : '50%' : '50%'};
@@ -39,5 +33,3 @@ const MenuItemWrapper = styled.div`
     width: 170px;
     height: ${props => props.browserType === 'mobile' ? `calc(${windowHeight}px - 90px)` : `100%` };
 `
-
-export { MainDisplay, MenuDisplay, MenuItemWrapper }
